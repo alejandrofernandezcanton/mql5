@@ -1,0 +1,6 @@
+# Ignorar archivos compilados
+*.ex5
+
+# Ignorar configuración de MetaEditor
+*.mq5~
+*.mqh~
