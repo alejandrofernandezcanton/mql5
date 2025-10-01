@@ -1,0 +1,20 @@
+user: 5040265640
+pass: !c4vQcLh
+inversor: Q*S7WiUv (Contraseña solo lectura)
+
+Name     : Alejandro Fernández Cantón
+Type     : Forex Hedged EUR
+Server   : MetaQuotes-Demo
+Login    : 5040265640
+Password : !c4vQcLh
+Investor : Q*S7WiUv
+
+
+
+Un script que cuando empiece se espere a que yo le introduzca una hora de comienzo y una hora de finalización. 
+Una vez que tenga estos datos, el script esperará a que llegue la hora de comienzo. 
+A partir de que empiece la hora de comienzo y hasta el final de la hora de finalización voy guardar el valor máximo y mínimo del mercado correspondiente.
+Una vez tenga el valor mínimo y máximo obtenido en el periodo de tiempo introducido con anterioridad voy a ir consultando velas (cambio del valor del mercado en un periodo de tiempo) de 5 minutos. 
+En el momento que una vela termine por debajo del límite inferior, se programa una órden de sell limit en ese punto mínimo del rango anteriormente establecido. El límite de pérdida sería el punto máximo del rango marcado anteriormente. Y el límite de ganancia sería de un riesgo beneficio 1:1 (la misma cantidad hacia el lado contrario)
+En el momento que una vela termine por encima del límite superior, se programa una órden de boy limit en ese punto máximo del rango anteriormente establecido. El límite de pérdida sería el punto mínimo del rango marcado anteriormente. Y el límite de ganancia sería de un riesgo beneficio 1:1 (la misma cantidad hacia el lado contrario)
+La órden solo se podrá ejectar hasta 3 horas después de nuestro periodo, si no se cancela la orden.
