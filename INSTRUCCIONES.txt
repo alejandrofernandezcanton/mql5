@@ -19,3 +19,5 @@ Una vez tenga el valor mínimo y máximo obtenido en el periodo de tiempo introd
 En el momento que una vela tenga un valor mínimo (el valor mínimo es la propiedad low de MqlRates) por debajo del límite inferior (variable minValue), se programa una órden de sell limit en ese punto mínimo del rango anteriormente establecido. El límite de pérdida sería el punto máximo del rango marcado anteriormente (variable maxValue). Y el límite de ganancia sería de un riesgo beneficio 1:1 (la misma cantidad hacia el lado contrario).
 En el momento que una vela tenga un valor máximo (el valor máximo es la propiedad high de MqlRates) por encima del límite superior (variable maxValue), se programa una órden de buy limit en ese punto máximo del rango anteriormente establecido. El límite de pérdida sería el punto mínimo del rango marcado anteriormente (variable minValue). Y el límite de ganancia sería de un riesgo beneficio 1:1 (la misma cantidad hacia el lado contrario)
 La órden solo se podrá ejectar hasta 3 horas después de nuestro periodo, si no se cancela la orden.
+
+euro dolar de las 9 a las 10:30 de la mañana
